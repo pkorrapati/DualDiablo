@@ -1,0 +1,23 @@
+clear;
+clc;
+
+% Initialize the inertia tensor as a 3x3 matrix
+inertiaTensor = zeros(3, 3);
+
+% Body
+inertiaTensor(1, 1) = 1; % Ixx
+inertiaTensor(1, 2) = 1; % Ixy
+inertiaTensor(1, 3) = 1; % Ixz
+inertiaTensor(2, 2) = 2; % Iyy
+inertiaTensor(2, 3) = 2; % Iyz
+inertiaTensor(3, 3) = 3; % Izz
+
+% find  principal axes of inertia
+[principalAxes, principalMoments] = eig(inertiaTensor);
+
+% Display the principal moments and axes
+disp('Principal Moments:');
+disp(diag(principalMoments));
+disp('Principal Axes:');
+disp(principalAxes);
+
