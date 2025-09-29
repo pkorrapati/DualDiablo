@@ -1,0 +1,36 @@
+{
+  "package_name": "custom_msgs",
+  "output_dir": "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_generator_c/custom_msgs",
+  "template_dir": "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource",
+  "idl_tuples": [
+    "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PoseCtrl.idl"
+  ],
+  "ros_interface_files": [
+    "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/src/custom_msgs/msg/PoseCtrl.msg"
+  ],
+  "target_dependencies": [
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../../../lib/rosidl_generator_c/rosidl_generator_c",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../../../lib/python3.9/site-packages/rosidl_generator_c/__init__.py",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/action__type_support.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/action__type_support.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/empty__description.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/full__description.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl__description.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl__functions.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl__functions.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl__struct.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl__type_support.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/idl__type_support.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/msg__functions.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/msg__functions.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/msg__struct.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/msg__type_support.h.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/srv__type_support.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_generator_c/cmake/../resource/srv__type_support.h.em",
+    "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PoseCtrl.idl"
+  ],
+  "type_description_tuples": [
+    "msg/PoseCtrl.idl:/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_generator_type_description/custom_msgs/msg/PoseCtrl.json"
+  ]
+}

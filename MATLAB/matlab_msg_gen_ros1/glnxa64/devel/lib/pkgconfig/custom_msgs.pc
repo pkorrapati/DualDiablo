@@ -1,0 +1,8 @@
+prefix=/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen_ros1/glnxa64/devel
+
+Name: custom_msgs
+Description: Description of custom_msgs
+Version: 0.0.0
+Cflags: -I/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen_ros1/glnxa64/devel/include -I/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen_ros1/glnxa64/src/custom_msgs/include
+Libs: -L${prefix}/lib -lcustom_msgs_matlab
+Requires: message_runtime message_runtime roscpp

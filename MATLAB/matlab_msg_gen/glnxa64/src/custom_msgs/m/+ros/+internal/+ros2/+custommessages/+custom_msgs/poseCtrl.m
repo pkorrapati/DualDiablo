@@ -1,0 +1,36 @@
+function [data, info] = poseCtrl
+%PoseCtrl gives an empty data for custom_msgs/PoseCtrl
+% Copyright 2019-2021 The MathWorks, Inc.
+data = struct();
+data.MessageType = 'custom_msgs/PoseCtrl';
+[data.fl_x, info.fl_x] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.fl_z, info.fl_z] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.fr_x, info.fr_x] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.fr_z, info.fr_z] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.f_pitch, info.f_pitch] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.f_delta, info.f_delta] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.bl_x, info.bl_x] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.bl_z, info.bl_z] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.br_x, info.br_x] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.br_z, info.br_z] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.b_pitch, info.b_pitch] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+[data.b_delta, info.b_delta] = ros.internal.ros2.messages.ros2.default_type('double',1,0);
+info.MessageType = 'custom_msgs/PoseCtrl';
+info.constant = 0;
+info.default = 0;
+info.maxstrlen = NaN;
+info.MaxLen = 1;
+info.MinLen = 1;
+info.MatPath = cell(1,12);
+info.MatPath{1} = 'fl_x';
+info.MatPath{2} = 'fl_z';
+info.MatPath{3} = 'fr_x';
+info.MatPath{4} = 'fr_z';
+info.MatPath{5} = 'f_pitch';
+info.MatPath{6} = 'f_delta';
+info.MatPath{7} = 'bl_x';
+info.MatPath{8} = 'bl_z';
+info.MatPath{9} = 'br_x';
+info.MatPath{10} = 'br_z';
+info.MatPath{11} = 'b_pitch';
+info.MatPath{12} = 'b_delta';
