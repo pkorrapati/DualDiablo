@@ -1,0 +1,309 @@
+[0.000000] (-) TimerEvent: {}
+[0.000261] (custom_msgs) JobQueued: {'identifier': 'custom_msgs', 'dependencies': OrderedDict()}
+[0.000724] (custom_msgs) JobStarted: {'identifier': 'custom_msgs'}
+[0.039372] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'cmake'}
+[0.039804] (custom_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake', '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/src/custom_msgs', '-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed', '-DBUILD_TESTING=OFF', '-DALIAS_ROS2_TF2=1', '-DCMAKE_CXX_FLAGS_RELEASE=-O0', '-G', 'Ninja', '-DCMAKE_C_COMPILER=/usr/bin/gcc', '-DCMAKE_CXX_COMPILER=/usr/bin/g++', '-DCMAKE_INSTALL_PREFIX=/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install'], 'cwd': '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs', 'env': OrderedDict([('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('ROS_LANG_DISABLE', 'geneus:genlisp:gennodejs'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('WORKON_HOME', '/home/pkorrap/.virtualenvs'), ('USER', 'pkorrap'), ('LOCAL_PYTHON_VENV_PATH', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2025a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2025a/sys/os/glnxa64:/usr/local/MATLAB/R2025a/bin/glnxa64:/home/pkorrap/.MathWorks/D7P8bRQE8tJROWzD72O_ERheIYsh3N7Z2Yo12zD0lxI/bin/glnxa64:/usr/local/MATLAB/R2025a/extern/lib/glnxa64:/usr/local/MATLAB/R2025a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/amd64/server:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BASEMATLABPATH', ''), ('HOME', '/home/pkorrap'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2025a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2025a/bin/glnxa64/ld_shim.so.2.35.ubuntu_22_04'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('SYSTEMD_EXEC_PID', '3528'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/574592798/bus'), ('COLORTERM', 'truecolor'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('MWAPIKEY', 'Qv8VRx6xYomUHnSh'), ('ROS_DISTRO', 'jazzy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'pkorrap'), ('MATLAB_MEM_MGR_VALUE', ''), ('BOOST_INSTALL_DIR', '/usr/local/MATLAB/R2025a/sys/ros1/glnxa64/ros1/boost'), ('_', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ROS1_INSTALL_DIR', '/usr/local/MATLAB/R2025a/sys/ros1/glnxa64/ros1'), ('USERNAME', 'pkorrap'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/bin:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2025a/toolbox/shared/coder/ninja/glnxa64:/opt/ros/humble/bin:/home/pkorrap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/AUE-VIPR23-1057:@/tmp/.ICE-unix/3244,unix/AUE-VIPR23-1057:/tmp/.ICE-unix/3244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/65a6b4f9_a408_4c13_aef5_df9bf2d29b28'), ('XDG_RUNTIME_DIR', '/run/user/574592798'), ('TOOLBOX', '/usr/local/MATLAB/R2025a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':1'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/574592798/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/574592798/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('CMAKE_PATH', '/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_574592798_VLC3Hy'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2025a/sys/openscenegraph/lib/glnxa64'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/pkorrap/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/574592798/gnupg/S.gpg-agent:0:1'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('VIRTUAL_ENV', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000117000002EA0'), ('PYTHONPATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MW_CONNECTOR_COOKIE_SETTINGS', '[{"prefix":"ch_","suffix":"_19544"}]'), ('CMAKE_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[0.098808] (custom_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.099761] (-) TimerEvent: {}
+[0.159335] (custom_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.170222] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.199845] (-) TimerEvent: {}
+[0.225680] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.235357] (custom_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/gcc - skipped\n'}
+[0.235631] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.236002] (custom_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.240370] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.299933] (-) TimerEvent: {}
+[0.305330] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.315507] (custom_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/g++ - skipped\n'}
+[0.316371] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.316681] (custom_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.317151] (custom_msgs) StdoutLine: {'line': b'-- Building for ROS 2 Jazzy\n'}
+[0.318588] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 2.5.2 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/ament_cmake/cmake)\n'}
+[0.400259] (-) TimerEvent: {}
+[0.500673] (-) TimerEvent: {}
+[0.600922] (-) TimerEvent: {}
+[0.660948] (custom_msgs) StdoutLine: {'line': b'-- Found Python3: /home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.701005] (-) TimerEvent: {}
+[0.765448] (custom_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.12.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/ament_cmake_ros/cmake)\n'}
+[0.773877] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_typesupport_c: 3.2.2 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/cmake)\n'}
+[0.774615] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.801092] (-) TimerEvent: {}
+[0.836386] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_typesupport_cpp: 3.2.2 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_cpp/cmake)\n'}
+[0.837485] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.880315] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.6.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_default_generators/cmake)\n'}
+[0.889457] (custom_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 4.8.1 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_adapter/cmake)\n'}
+[0.893289] (custom_msgs) StdoutLine: {'line': b'-- Found class_loader: 2.7.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/class_loader/cmake)\n'}
+[0.898551] (custom_msgs) StdoutLine: {'line': b'-- Found rclcpp: 28.1.3 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rclcpp/cmake)\n'}
+[0.901285] (-) TimerEvent: {}
+[0.991477] (custom_msgs) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 7.3.1 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rmw_implementation_cmake/cmake)\n'}
+[0.994458] (custom_msgs) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 9.0.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.001403] (-) TimerEvent: {}
+[1.038890] (custom_msgs) StdoutLine: {'line': b'-- Found FastRTPS: /usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/include (Required is at least version "2.13") \n'}
+[1.050770] (custom_msgs) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.101465] (-) TimerEvent: {}
+[1.201600] (-) TimerEvent: {}
+[1.301714] (-) TimerEvent: {}
+[1.401843] (-) TimerEvent: {}
+[1.435745] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.501907] (-) TimerEvent: {}
+[1.543072] (custom_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.553044] (custom_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.574645] (custom_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.586262] (custom_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs\n'}
+[1.599882] (custom_msgs) CommandEnded: {'returncode': 0}
+[1.602116] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'build'}
+[1.602505] (-) TimerEvent: {}
+[1.602582] (custom_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake', '--build', '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs', '--', '-j112', '-l112'], 'cwd': '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs', 'env': OrderedDict([('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('ROS_LANG_DISABLE', 'geneus:genlisp:gennodejs'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('WORKON_HOME', '/home/pkorrap/.virtualenvs'), ('USER', 'pkorrap'), ('LOCAL_PYTHON_VENV_PATH', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2025a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2025a/sys/os/glnxa64:/usr/local/MATLAB/R2025a/bin/glnxa64:/home/pkorrap/.MathWorks/D7P8bRQE8tJROWzD72O_ERheIYsh3N7Z2Yo12zD0lxI/bin/glnxa64:/usr/local/MATLAB/R2025a/extern/lib/glnxa64:/usr/local/MATLAB/R2025a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/amd64/server:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BASEMATLABPATH', ''), ('HOME', '/home/pkorrap'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2025a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2025a/bin/glnxa64/ld_shim.so.2.35.ubuntu_22_04'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('SYSTEMD_EXEC_PID', '3528'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/574592798/bus'), ('COLORTERM', 'truecolor'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('MWAPIKEY', 'Qv8VRx6xYomUHnSh'), ('ROS_DISTRO', 'jazzy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'pkorrap'), ('MATLAB_MEM_MGR_VALUE', ''), ('BOOST_INSTALL_DIR', '/usr/local/MATLAB/R2025a/sys/ros1/glnxa64/ros1/boost'), ('_', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ROS1_INSTALL_DIR', '/usr/local/MATLAB/R2025a/sys/ros1/glnxa64/ros1'), ('USERNAME', 'pkorrap'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/bin:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2025a/toolbox/shared/coder/ninja/glnxa64:/opt/ros/humble/bin:/home/pkorrap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/AUE-VIPR23-1057:@/tmp/.ICE-unix/3244,unix/AUE-VIPR23-1057:/tmp/.ICE-unix/3244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/65a6b4f9_a408_4c13_aef5_df9bf2d29b28'), ('XDG_RUNTIME_DIR', '/run/user/574592798'), ('TOOLBOX', '/usr/local/MATLAB/R2025a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':1'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/574592798/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/574592798/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('CMAKE_PATH', '/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_574592798_VLC3Hy'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2025a/sys/openscenegraph/lib/glnxa64'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/pkorrap/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/574592798/gnupg/S.gpg-agent:0:1'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('VIRTUAL_ENV', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000117000002EA0'), ('PYTHONPATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MW_CONNECTOR_COOKIE_SETTINGS', '[{"prefix":"ch_","suffix":"_19544"}]'), ('CMAKE_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[1.702579] (-) TimerEvent: {}
+[1.802766] (-) TimerEvent: {}
+[1.840576] (custom_msgs) StdoutLine: {'line': b'[1/27] Generating type hashes for ROS interfaces\n'}
+[1.903115] (-) TimerEvent: {}
+[2.003419] (-) TimerEvent: {}
+[2.104171] (-) TimerEvent: {}
+[2.126286] (custom_msgs) StdoutLine: {'line': b'[2/27] Generating C++ code for ROS interfaces\n'}
+[2.141613] (custom_msgs) StdoutLine: {'line': b'[3/27] Generating C code for ROS interfaces\n'}
+[2.167965] (custom_msgs) StdoutLine: {'line': b'[4/27] Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose_ctrl__type_support.c.o\n'}
+[2.184723] (custom_msgs) StdoutLine: {'line': b'[5/27] Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose_ctrl__description.c.o\n'}
+[2.204234] (-) TimerEvent: {}
+[2.235053] (custom_msgs) StdoutLine: {'line': b'[6/27] Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose_ctrl__functions.c.o\n'}
+[2.258161] (custom_msgs) StdoutLine: {'line': b'[7/27] Linking C shared library libcustom_msgs__rosidl_generator_c.so\n'}
+[2.304315] (-) TimerEvent: {}
+[2.404698] (-) TimerEvent: {}
+[2.505128] (-) TimerEvent: {}
+[2.510848] (custom_msgs) StdoutLine: {'line': b'[8/27] Generating C type support dispatch for ROS interfaces\n'}
+[2.512406] (custom_msgs) StdoutLine: {'line': b'[9/27] Generating C++ type support dispatch for ROS interfaces\n'}
+[2.521838] (custom_msgs) StdoutLine: {'line': b'[10/27] Generating C++ introspection for ROS interfaces\n'}
+[2.525730] (custom_msgs) StdoutLine: {'line': b'[11/27] Generating C introspection for ROS interfaces\n'}
+[2.544097] (custom_msgs) StdoutLine: {'line': b'[12/27] Generating C++ type support for eProsima Fast-RTPS\n'}
+[2.545737] (custom_msgs) StdoutLine: {'line': b'[13/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/pose_ctrl__type_support.cpp.o\n'}
+[2.548669] (custom_msgs) StdoutLine: {'line': b'[14/27] Generating C type support for eProsima Fast-RTPS\n'}
+[2.557660] (custom_msgs) StdoutLine: {'line': b'[15/27] Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/pose_ctrl__type_support.c.o\n'}
+[2.577971] (custom_msgs) StdoutLine: {'line': b'[16/27] Linking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[2.604936] (custom_msgs) StdoutLine: {'line': b'[17/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_c.so\n'}
+[2.605189] (-) TimerEvent: {}
+[2.705384] (-) TimerEvent: {}
+[2.805629] (-) TimerEvent: {}
+[2.838662] (custom_msgs) StdoutLine: {'line': b'[18/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/pose_ctrl__type_support.cpp.o\n'}
+[2.848933] (custom_msgs) StdoutLine: {'line': b'[19/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/pose_ctrl__type_support.cpp.o\n'}
+[2.903092] (custom_msgs) StdoutLine: {'line': b'[20/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[2.905682] (-) TimerEvent: {}
+[2.912001] (custom_msgs) StdoutLine: {'line': b'[21/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[2.957257] (custom_msgs) StdoutLine: {'line': b'[22/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose_ctrl__type_support_c.cpp.o\n'}
+[2.966822] (custom_msgs) StdoutLine: {'line': b'[23/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/pose_ctrl__type_support.cpp.o\n'}
+[3.005763] (-) TimerEvent: {}
+[3.022029] (custom_msgs) StdoutLine: {'line': b'[24/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[3.029732] (custom_msgs) StdoutLine: {'line': b'[25/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.105830] (-) TimerEvent: {}
+[3.206347] (-) TimerEvent: {}
+[3.306559] (-) TimerEvent: {}
+[3.406980] (-) TimerEvent: {}
+[3.507178] (-) TimerEvent: {}
+[3.607325] (-) TimerEvent: {}
+[3.707501] (-) TimerEvent: {}
+[3.807943] (-) TimerEvent: {}
+[3.908202] (-) TimerEvent: {}
+[4.008400] (-) TimerEvent: {}
+[4.108571] (-) TimerEvent: {}
+[4.208707] (-) TimerEvent: {}
+[4.308862] (-) TimerEvent: {}
+[4.409010] (-) TimerEvent: {}
+[4.509180] (-) TimerEvent: {}
+[4.609378] (-) TimerEvent: {}
+[4.709641] (-) TimerEvent: {}
+[4.809819] (-) TimerEvent: {}
+[4.909958] (-) TimerEvent: {}
+[5.010109] (-) TimerEvent: {}
+[5.110268] (-) TimerEvent: {}
+[5.210920] (-) TimerEvent: {}
+[5.311695] (-) TimerEvent: {}
+[5.412333] (-) TimerEvent: {}
+[5.512599] (-) TimerEvent: {}
+[5.612982] (-) TimerEvent: {}
+[5.713157] (-) TimerEvent: {}
+[5.813310] (-) TimerEvent: {}
+[5.913452] (-) TimerEvent: {}
+[6.013605] (-) TimerEvent: {}
+[6.113829] (-) TimerEvent: {}
+[6.214039] (-) TimerEvent: {}
+[6.314494] (-) TimerEvent: {}
+[6.414693] (-) TimerEvent: {}
+[6.515460] (-) TimerEvent: {}
+[6.615959] (-) TimerEvent: {}
+[6.716184] (-) TimerEvent: {}
+[6.816328] (-) TimerEvent: {}
+[6.916474] (-) TimerEvent: {}
+[7.016931] (-) TimerEvent: {}
+[7.117723] (-) TimerEvent: {}
+[7.218063] (-) TimerEvent: {}
+[7.319374] (-) TimerEvent: {}
+[7.420127] (-) TimerEvent: {}
+[7.520594] (-) TimerEvent: {}
+[7.621878] (-) TimerEvent: {}
+[7.722538] (-) TimerEvent: {}
+[7.822761] (-) TimerEvent: {}
+[7.923221] (-) TimerEvent: {}
+[8.023348] (-) TimerEvent: {}
+[8.123506] (-) TimerEvent: {}
+[8.223681] (-) TimerEvent: {}
+[8.323878] (-) TimerEvent: {}
+[8.424106] (-) TimerEvent: {}
+[8.524278] (-) TimerEvent: {}
+[8.624713] (-) TimerEvent: {}
+[8.724946] (-) TimerEvent: {}
+[8.825529] (-) TimerEvent: {}
+[8.926215] (-) TimerEvent: {}
+[9.026413] (-) TimerEvent: {}
+[9.126620] (-) TimerEvent: {}
+[9.226755] (-) TimerEvent: {}
+[9.327115] (-) TimerEvent: {}
+[9.427330] (-) TimerEvent: {}
+[9.527891] (-) TimerEvent: {}
+[9.628051] (-) TimerEvent: {}
+[9.728171] (-) TimerEvent: {}
+[9.828284] (-) TimerEvent: {}
+[9.928371] (-) TimerEvent: {}
+[10.028499] (-) TimerEvent: {}
+[10.128659] (-) TimerEvent: {}
+[10.229108] (-) TimerEvent: {}
+[10.329284] (-) TimerEvent: {}
+[10.429389] (-) TimerEvent: {}
+[10.529608] (-) TimerEvent: {}
+[10.629738] (-) TimerEvent: {}
+[10.730229] (-) TimerEvent: {}
+[10.830396] (-) TimerEvent: {}
+[10.930595] (-) TimerEvent: {}
+[11.030717] (-) TimerEvent: {}
+[11.130832] (-) TimerEvent: {}
+[11.230954] (-) TimerEvent: {}
+[11.331082] (-) TimerEvent: {}
+[11.431204] (-) TimerEvent: {}
+[11.531341] (-) TimerEvent: {}
+[11.631628] (-) TimerEvent: {}
+[11.731819] (-) TimerEvent: {}
+[11.832256] (-) TimerEvent: {}
+[11.932472] (-) TimerEvent: {}
+[12.032651] (-) TimerEvent: {}
+[12.132939] (-) TimerEvent: {}
+[12.233123] (-) TimerEvent: {}
+[12.333283] (-) TimerEvent: {}
+[12.433387] (-) TimerEvent: {}
+[12.533544] (-) TimerEvent: {}
+[12.558959] (custom_msgs) StdoutLine: {'line': b'[26/27] Building CXX object CMakeFiles/custom_msgs_matlab.dir/src/custom_msgs_PoseCtrl_message.cpp.o\n'}
+[12.633618] (-) TimerEvent: {}
+[12.733889] (-) TimerEvent: {}
+[12.834126] (-) TimerEvent: {}
+[12.934382] (-) TimerEvent: {}
+[13.007226] (custom_msgs) StdoutLine: {'line': b'[27/27] Linking CXX shared library libcustom_msgs_matlab.so\n'}
+[13.009273] (custom_msgs) CommandEnded: {'returncode': 0}
+[13.024540] (custom_msgs) JobProgress: {'identifier': 'custom_msgs', 'progress': 'install'}
+[13.028568] (custom_msgs) Command: {'cmd': ['/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake', '--install', '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs'], 'cwd': '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs', 'env': OrderedDict([('VIRTUALENVWRAPPER_WORKON_CD', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ARCH', 'glnxa64'), ('ROS_LANG_DISABLE', 'geneus:genlisp:gennodejs'), ('CUSTOM_LD_LIBRARY_PATH', ''), ('WORKON_HOME', '/home/pkorrap/.virtualenvs'), ('USER', 'pkorrap'), ('LOCAL_PYTHON_VENV_PATH', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv'), ('MEMKIND_HEAP_MANAGER', 'TBB'), ('CUSTOM_AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('XDG_SESSION_TYPE', 'x11'), ('KMP_HANDLE_SIGNALS', '0'), ('SHLVL', '2'), ('ICU_TIMEZONE_FILES_DIR', '/usr/local/MATLAB/R2025a/bin/icutzdata'), ('LD_LIBRARY_PATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib:/usr/local/MATLAB/R2025a/sys/os/glnxa64:/usr/local/MATLAB/R2025a/bin/glnxa64:/home/pkorrap/.MathWorks/D7P8bRQE8tJROWzD72O_ERheIYsh3N7Z2Yo12zD0lxI/bin/glnxa64:/usr/local/MATLAB/R2025a/extern/lib/glnxa64:/usr/local/MATLAB/R2025a/cefclient/sys/os/glnxa64:/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/amd64/native_threads:/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/amd64/server:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BASEMATLABPATH', ''), ('HOME', '/home/pkorrap'), ('VIRTUALENVWRAPPER_PYTHON', '/usr/bin/python3'), ('AUTOMOUNT_MAP', ''), ('OLDPWD', '/usr/local/MATLAB/R2025a'), ('DESKTOP_SESSION', 'ubuntu'), ('MW_LD_SHIM', '/usr/local/MATLAB/R2025a/bin/glnxa64/ld_shim.so.2.35.ubuntu_22_04'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('KMP_BLOCKTIME', '1'), ('PS1', '(venv)'), ('LIBVA_MESSAGING_LEVEL', '0'), ('SYSTEMD_EXEC_PID', '3528'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/574592798/bus'), ('COLORTERM', 'truecolor'), ('CUSTOM_SITE_PACKAGES_PATH', ''), ('IM_CONFIG_PHASE', '1'), ('COLCON_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('MWAPIKEY', 'Qv8VRx6xYomUHnSh'), ('ROS_DISTRO', 'jazzy'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'pkorrap'), ('MATLAB_MEM_MGR_VALUE', ''), ('BOOST_INSTALL_DIR', '/usr/local/MATLAB/R2025a/sys/ros1/glnxa64/ros1/boost'), ('_', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin/colcon'), ('ROS_VERSION', '2'), ('PKG_CONFIG_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/pkgconfig'), ('XDG_SESSION_CLASS', 'user'), ('ROS1_INSTALL_DIR', '/usr/local/MATLAB/R2025a/sys/ros1/glnxa64/ros1'), ('USERNAME', 'pkorrap'), ('TERM', 'dumb'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin::/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/bin:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin:/usr/local/MATLAB/R2025a/toolbox/shared/coder/ninja/glnxa64:/opt/ros/humble/bin:/home/pkorrap/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/AUE-VIPR23-1057:@/tmp/.ICE-unix/3244,unix/AUE-VIPR23-1057:/tmp/.ICE-unix/3244'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/65a6b4f9_a408_4c13_aef5_df9bf2d29b28'), ('XDG_RUNTIME_DIR', '/run/user/574592798'), ('TOOLBOX', '/usr/local/MATLAB/R2025a/toolbox'), ('MKL_DOMAIN_NUM_THREADS', ''), ('KMP_INIT_AT_FORK', 'false'), ('DISPLAY', ':1'), ('LD_PRELOAD', ''), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('PRE_LD_PRELOAD', ''), ('VIRTUAL_ENV_PROMPT', '(venv)'), ('RMW_IMPLEMENTATION', ''), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/574592798/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.100'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/574592798/keyring/ssh'), ('ROS_DOMAIN_ID', '5'), ('AMENT_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2'), ('SHELL', '/bin/bash'), ('CMAKE_PATH', '/usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin'), ('KRB5CCNAME', 'FILE:/tmp/krb5cc_574592798_VLC3Hy'), ('XFILESEARCHPATH', '/usr/local/MATLAB/R2025a/sys/java/jre/glnxa64/jre/lib/locale/%L/%T/%N%S:'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VIRTUALENVWRAPPER_PROJECT_FILENAME', '.project'), ('OSG_LD_LIBRARY_PATH', '/usr/local/MATLAB/R2025a/sys/openscenegraph/lib/glnxa64'), ('VIRTUALENVWRAPPER_HOOK_DIR', '/home/pkorrap/.virtualenvs'), ('GPG_AGENT_INFO', '/run/user/574592798/gnupg/S.gpg-agent:0:1'), ('VIRTUALENVWRAPPER_SCRIPT', '/usr/local/bin/virtualenvwrapper.sh'), ('VIRTUAL_ENV', '/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv'), ('CUSTOM_PATH', ''), ('KMP_STACKSIZE', '512k'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DYLD_LIBRARY_PATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('MKL_NUM_THREADS', ''), ('MW_PATCH_OFFSETS', '0000117000002EA0'), ('PYTHONPATH', ':/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages:/home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'C'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('MW_CONNECTOR_COOKIE_SETTINGS', '[{"prefix":"ch_","suffix":"_19544"}]'), ('CMAKE_PREFIX_PATH', '/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2:/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2')]), 'shell': False}
+[13.030904] (custom_msgs) StdoutLine: {'line': b'-- Install configuration: "Release"\n'}
+[13.031069] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/rosidl_interfaces/custom_msgs\n'}
+[13.031188] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/msg/PoseCtrl.json\n'}
+[13.031259] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs\n'}
+[13.031397] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg\n'}
+[13.032072] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h\n'}
+[13.032131] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/pose_ctrl.h\n'}
+[13.032232] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail\n'}
+[13.032279] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.h\n'}
+[13.032326] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.c\n'}
+[13.032394] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__struct.h\n'}
+[13.032433] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__functions.h\n'}
+[13.032478] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__functions.c\n'}
+[13.032522] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__description.c\n'}
+[13.032564] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/library_path.sh\n'}
+[13.032637] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/library_path.dsv\n'}
+[13.032679] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_generator_c.so\n'}
+[13.032720] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs\n'}
+[13.032809] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg\n'}
+[13.032852] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[13.032889] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail\n'}
+[13.032930] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_fastrtps_c.h\n'}
+[13.033003] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so\n'}
+[13.033061] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs\n'}
+[13.033096] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg\n'}
+[13.033133] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail\n'}
+[13.033194] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_introspection_c.h\n'}
+[13.033232] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.c\n'}
+[13.033271] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[13.033309] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so\n'}
+[13.033396] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_c.so\n'}
+[13.033439] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs\n'}
+[13.033499] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg\n'}
+[13.033585] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/pose_ctrl.hpp\n'}
+[13.034250] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[13.034459] (-) TimerEvent: {}
+[13.034678] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail\n'}
+[13.035196] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.hpp\n'}
+[13.035287] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__builder.hpp\n'}
+[13.035344] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__struct.hpp\n'}
+[13.035440] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__traits.hpp\n'}
+[13.035488] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs\n'}
+[13.035539] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg\n'}
+[13.035584] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[13.035663] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail\n'}
+[13.035703] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps\n'}
+[13.035765] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[13.035800] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so\n'}
+[13.035837] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs\n'}
+[13.035877] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg\n'}
+[13.035910] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail\n'}
+[13.035945] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.cpp\n'}
+[13.035983] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_introspection_cpp.hpp\n'}
+[13.036016] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so\n'}
+[13.036048] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_cpp.so\n'}
+[13.036080] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/msg/PoseCtrl.idl\n'}
+[13.036112] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/msg/PoseCtrl.msg\n'}
+[13.036144] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include\n'}
+[13.036179] (custom_msgs) StdoutLine: {'line': b'-- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs\n'}
+[13.036212] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/visibility_control.h\n'}
+[13.036244] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs_matlab.so\n'}
+[13.039708] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m/\n'}
+[13.039866] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros\n'}
+[13.040373] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal\n'}
+[13.040433] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2\n'}
+[13.040484] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages\n'}
+[13.040546] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+custom_msgs\n'}
+[13.040605] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+custom_msgs/poseCtrl.m\n'}
+[13.040686] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/package_run_dependencies/custom_msgs\n'}
+[13.040789] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/parent_prefix_path/custom_msgs\n'}
+[13.040855] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/ament_prefix_path.sh\n'}
+[13.040916] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/ament_prefix_path.dsv\n'}
+[13.040986] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/path.sh\n'}
+[13.041045] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/path.dsv\n'}
+[13.041101] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.bash\n'}
+[13.041179] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.sh\n'}
+[13.041280] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.zsh\n'}
+[13.041329] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.dsv\n'}
+[13.041397] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/package.dsv\n'}
+[13.041456] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/packages/custom_msgs\n'}
+[13.041513] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake\n'}
+[13.041591] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-release.cmake\n'}
+[13.041698] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[13.041776] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake\n'}
+[13.041839] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake\n'}
+[13.041898] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-release.cmake\n'}
+[13.041984] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake\n'}
+[13.042049] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-release.cmake\n'}
+[13.042155] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake\n'}
+[13.042307] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[13.042429] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake\n'}
+[13.042567] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[13.042782] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-release.cmake\n'}
+[13.043241] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake\n'}
+[13.043356] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-release.cmake\n'}
+[13.043415] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/rosidl_cmake-extras.cmake\n'}
+[13.043497] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[13.043571] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[13.043608] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[13.043643] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[13.043678] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[13.043711] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[13.043744] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgsConfig.cmake\n'}
+[13.043777] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgsConfig-version.cmake\n'}
+[13.043810] (custom_msgs) StdoutLine: {'line': b'-- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/package.xml\n'}
+[13.044590] (custom_msgs) CommandEnded: {'returncode': 0}
+[13.134585] (-) TimerEvent: {}
+[13.135205] (custom_msgs) JobEnded: {'identifier': 'custom_msgs', 'rc': 0}
+[13.136528] (-) EventReactorShutdown: {}

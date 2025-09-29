@@ -1,0 +1,170 @@
+[0.042s] Invoking command in '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/src/custom_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed -DBUILD_TESTING=OFF -DALIAS_ROS2_TF2=1 -DCMAKE_CXX_FLAGS_RELEASE=-O0 -G Ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_INSTALL_PREFIX=/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install
+[0.098s] -- The C compiler identification is GNU 11.4.0
+[0.159s] -- The CXX compiler identification is GNU 11.4.0
+[0.170s] -- Detecting C compiler ABI info
+[0.225s] -- Detecting C compiler ABI info - done
+[0.235s] -- Check for working C compiler: /usr/bin/gcc - skipped
+[0.235s] -- Detecting C compile features
+[0.235s] -- Detecting C compile features - done
+[0.240s] -- Detecting CXX compiler ABI info
+[0.305s] -- Detecting CXX compiler ABI info - done
+[0.315s] -- Check for working CXX compiler: /usr/bin/g++ - skipped
+[0.316s] -- Detecting CXX compile features
+[0.316s] -- Detecting CXX compile features - done
+[0.316s] -- Building for ROS 2 Jazzy
+[0.318s] -- Found ament_cmake: 2.5.2 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/ament_cmake/cmake)
+[0.660s] -- Found Python3: /home/pkorrap/.matlab/R2025a/ros2/glnxa64/venv/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.765s] -- Found ament_cmake_ros: 0.12.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/ament_cmake_ros/cmake)
+[0.773s] -- Found rosidl_typesupport_c: 3.2.2 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/cmake)
+[0.774s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.836s] -- Found rosidl_typesupport_cpp: 3.2.2 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_cpp/cmake)
+[0.837s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.880s] -- Found rosidl_default_generators: 1.6.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_default_generators/cmake)
+[0.889s] -- Found rosidl_adapter: 4.8.1 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_adapter/cmake)
+[0.893s] -- Found class_loader: 2.7.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/class_loader/cmake)
+[0.898s] -- Found rclcpp: 28.1.3 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rclcpp/cmake)
+[0.991s] -- Found rmw_implementation_cmake: 7.3.1 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rmw_implementation_cmake/cmake)
+[0.994s] -- Found rmw_fastrtps_cpp: 9.0.0 (/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rmw_fastrtps_cpp/cmake)
+[1.038s] -- Found FastRTPS: /usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/include (Required is at least version "2.13") 
+[1.050s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.435s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.542s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.552s] -- Configuring done
+[1.574s] -- Generating done
+[1.586s] -- Build files have been written to: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs
+[1.599s] Invoked command in '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/src/custom_msgs -DCMAKE_BUILD_TYPE=Release -DCMAKE_SHARED_LINKER_FLAGS=-Wl,-no-as-needed -DBUILD_TESTING=OFF -DALIAS_ROS2_TF2=1 -DCMAKE_CXX_FLAGS_RELEASE=-O0 -G Ninja -DCMAKE_C_COMPILER=/usr/bin/gcc -DCMAKE_CXX_COMPILER=/usr/bin/g++ -DCMAKE_INSTALL_PREFIX=/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install
+[1.602s] Invoking command in '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake --build /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs -- -j112 -l112
+[1.840s] [1/27] Generating type hashes for ROS interfaces
+[2.126s] [2/27] Generating C++ code for ROS interfaces
+[2.141s] [3/27] Generating C code for ROS interfaces
+[2.167s] [4/27] Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose_ctrl__type_support.c.o
+[2.184s] [5/27] Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose_ctrl__description.c.o
+[2.234s] [6/27] Building C object CMakeFiles/custom_msgs__rosidl_generator_c.dir/rosidl_generator_c/custom_msgs/msg/detail/pose_ctrl__functions.c.o
+[2.257s] [7/27] Linking C shared library libcustom_msgs__rosidl_generator_c.so
+[2.510s] [8/27] Generating C type support dispatch for ROS interfaces
+[2.512s] [9/27] Generating C++ type support dispatch for ROS interfaces
+[2.521s] [10/27] Generating C++ introspection for ROS interfaces
+[2.525s] [11/27] Generating C introspection for ROS interfaces
+[2.543s] [12/27] Generating C++ type support for eProsima Fast-RTPS
+[2.545s] [13/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/custom_msgs/msg/pose_ctrl__type_support.cpp.o
+[2.548s] [14/27] Generating C type support for eProsima Fast-RTPS
+[2.557s] [15/27] Building C object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/custom_msgs/msg/detail/pose_ctrl__type_support.c.o
+[2.577s] [16/27] Linking C shared library libcustom_msgs__rosidl_typesupport_introspection_c.so
+[2.604s] [17/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_c.so
+[2.838s] [18/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/custom_msgs/msg/pose_ctrl__type_support.cpp.o
+[2.848s] [19/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/custom_msgs/msg/detail/pose_ctrl__type_support.cpp.o
+[2.902s] [20/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_cpp.so
+[2.911s] [21/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[2.957s] [22/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/custom_msgs/msg/detail/pose_ctrl__type_support_c.cpp.o
+[2.966s] [23/27] Building CXX object CMakeFiles/custom_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/custom_msgs/msg/detail/dds_fastrtps/pose_ctrl__type_support.cpp.o
+[3.021s] [24/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[3.029s] [25/27] Linking CXX shared library libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[12.558s] [26/27] Building CXX object CMakeFiles/custom_msgs_matlab.dir/src/custom_msgs_PoseCtrl_message.cpp.o
+[13.007s] [27/27] Linking CXX shared library libcustom_msgs_matlab.so
+[13.009s] Invoked command in '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake --build /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs -- -j112 -l112
+[13.028s] Invoking command in '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake --install /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs
+[13.030s] -- Install configuration: "Release"
+[13.030s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/rosidl_interfaces/custom_msgs
+[13.030s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/msg/PoseCtrl.json
+[13.031s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs
+[13.031s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg
+[13.031s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_generator_c__visibility_control.h
+[13.031s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/pose_ctrl.h
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.h
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.c
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__struct.h
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__functions.h
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__functions.c
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__description.c
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/library_path.sh
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/library_path.dsv
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_generator_c.so
+[13.032s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs
+[13.032s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[13.032s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_fastrtps_c.h
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_fastrtps_c.so
+[13.032s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs
+[13.032s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg
+[13.032s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail
+[13.032s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_introspection_c.h
+[13.033s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.c
+[13.033s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[13.033s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_introspection_c.so
+[13.033s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_c.so
+[13.033s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs
+[13.033s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg
+[13.033s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/pose_ctrl.hpp
+[13.034s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_generator_cpp__visibility_control.hpp
+[13.034s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.hpp
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__builder.hpp
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__struct.hpp
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__traits.hpp
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/dds_fastrtps
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_fastrtps_cpp.hpp
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_fastrtps_cpp.so
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__type_support.cpp
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/custom_msgs/msg/detail/pose_ctrl__rosidl_typesupport_introspection_cpp.hpp
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_introspection_cpp.so
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs__rosidl_typesupport_cpp.so
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/msg/PoseCtrl.idl
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/msg/PoseCtrl.msg
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include
+[13.035s] -- Up-to-date: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs
+[13.035s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/include/custom_msgs/visibility_control.h
+[13.036s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/lib/libcustom_msgs_matlab.so
+[13.039s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m/
+[13.039s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+custom_msgs
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/m//+ros/+internal/+ros2/+custommessages/+custom_msgs/poseCtrl.m
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/package_run_dependencies/custom_msgs
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/parent_prefix_path/custom_msgs
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/ament_prefix_path.sh
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/ament_prefix_path.dsv
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/path.sh
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/environment/path.dsv
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.bash
+[13.040s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.sh
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.zsh
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/local_setup.dsv
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/package.dsv
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/ament_index/resource_index/packages/custom_msgs
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cExport-release.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cExport-release.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cExport-release.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport.cmake
+[13.041s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cExport-release.cmake
+[13.042s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_generator_cppExport.cmake
+[13.042s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport.cmake
+[13.042s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/export_custom_msgs__rosidl_typesupport_fastrtps_cppExport-release.cmake
+[13.042s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[13.042s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_introspection_cppExport-release.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgs__rosidl_typesupport_cppExport-release.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/rosidl_cmake-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgsConfig.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/cmake/custom_msgsConfig-version.cmake
+[13.043s] -- Installing: /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/install/share/custom_msgs/package.xml
+[13.044s] Invoked command in '/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs' returned '0': PS1=(venv) VIRTUAL_ENV_PROMPT=(venv) /usr/local/MATLAB/R2025a/bin/glnxa64/cmake/bin/cmake --install /home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs

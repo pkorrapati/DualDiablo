@@ -1,0 +1,77 @@
+{
+    "version": "1.0",
+    "file_records": [
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Natural/Asphalt.mdl",
+            "source_hash": "24e1f683e332f7cc7fbc971fd889ba88805deb4c",
+            "target_url": "./SubUSDs/materials/Asphalt.mdl",
+            "target_hash": "6cb0c7648473b4abe94e988e64b59dfae71cb7c1"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Cherry_Planks.mdl",
+            "source_hash": "a797a8a1a8e8265db43b1081b99e22b5d823f6d8",
+            "target_url": "./SubUSDs/materials/Cherry_Planks.mdl",
+            "target_hash": "16008546e8697413dfcd9bfa70535757d3c58173"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Ash_Planks.mdl",
+            "source_hash": "a4044c697c420a8c1bb097cbd9b73cc1e966a2fe",
+            "target_url": "./SubUSDs/materials/Ash_Planks.mdl",
+            "target_hash": "18da8506bc92a7fda60744e2e096da10b99643b3"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Ash_Planks/Ash_Planks_BaseColor.png",
+            "source_hash": "e07dde3ec906043190ea45cc4d6d9d490eba733e",
+            "target_url": "./SubUSDs/textures/Ash_Planks_BaseColor.png",
+            "target_hash": "0b1710433f8fb912a59bffdf9fcaf13fa44eeff8"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Natural/Asphalt/Asphalt_BaseColor.png",
+            "source_hash": "2a7e56f2876f9cb8c82090de6e1765ce323cf4dd",
+            "target_url": "./SubUSDs/textures/Asphalt_BaseColor.png",
+            "target_hash": "91a14a9efb914ebfbb76d6a019e0ab5872850660"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Cherry_Planks/Cherry_Planks_BaseColor.png",
+            "source_hash": "c4d7ecb3d323ea85c42c6384f2ccc88e73fe4819",
+            "target_url": "./SubUSDs/textures/Cherry_Planks_BaseColor.png",
+            "target_hash": "e79d8324cd4d1949f2adae62195b33e72f1819f8"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Ash_Planks/Ash_Planks_ORM.png",
+            "source_hash": "bda3911cae47645dafd32dc36be02bbaeeafd578",
+            "target_url": "./SubUSDs/textures/Ash_Planks_ORM.png",
+            "target_hash": "5eedead3cfd803688fe865b3a8134b29ea3f0add"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Natural/Asphalt/Asphalt_ORM.png",
+            "source_hash": "cd5e15fd24dfb58d21c6fe6183ba0424e5ac10b7",
+            "target_url": "./SubUSDs/textures/Asphalt_ORM.png",
+            "target_hash": "2e686bdec19427d576c79815c7be5c16925470d0"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Cherry_Planks/Cherry_Planks_ORM.png",
+            "source_hash": "66d035a9fe7707435900e02bbaebe7d78eec7f36",
+            "target_url": "./SubUSDs/textures/Cherry_Planks_ORM.png",
+            "target_hash": "9a69308c9550265a9e1c6dd6263761d3a46a3110"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Ash_Planks/Ash_Planks_Normal.png",
+            "source_hash": "84ca7ce960adb165adaf075e7c79f89d59558d7b",
+            "target_url": "./SubUSDs/textures/Ash_Planks_Normal.png",
+            "target_hash": "2390ba7bef99afaed0f2b0189db1d1601c1ab6c5"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Natural/Asphalt/Asphalt_N.png",
+            "source_hash": "578522e660a6d66c9643d6c24ab124dd012b1586",
+            "target_url": "./SubUSDs/textures/Asphalt_N.png",
+            "target_hash": "cb57c5a11d870b1c8e0fecebc6b06464f8e08f9d"
+        },
+        {
+            "source_url": "http://omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Cherry_Planks/Cherry_Planks_N.png",
+            "source_hash": "c92e0758c592c15890c9fdc8ff3bef3b374ec77d",
+            "target_url": "./SubUSDs/textures/Cherry_Planks_N.png",
+            "target_hash": "2f1fca3e91abea0894280e9fa61101e586ea5b82"
+        }
+    ]
+}

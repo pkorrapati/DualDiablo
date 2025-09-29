@@ -1,0 +1,17 @@
+{
+  "package_name": "custom_msgs",
+  "output_dir": "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_typesupport_c/custom_msgs",
+  "template_dir": "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/resource",
+  "idl_tuples": [
+    "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_adapter/custom_msgs:msg/PoseCtrl.idl"
+  ],
+  "target_dependencies": [
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/rosidl_typesupport_c/rosidl_typesupport_c",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/lib/python3.9/site-packages/rosidl_typesupport_c/__init__.py",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/resource/action__type_support.c.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/resource/idl__type_support.cpp.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/resource/msg__type_support.cpp.em",
+    "/usr/local/MATLAB/R2025a/sys/ros2/glnxa64/ros2/share/rosidl_typesupport_c/resource/srv__type_support.cpp.em",
+    "/home/pkorrap/Projects/DualDiablo/MATLAB/matlab_msg_gen/glnxa64/build/custom_msgs/rosidl_adapter/custom_msgs/msg/PoseCtrl.idl"
+  ]
+}
