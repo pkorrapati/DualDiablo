@@ -1,0 +1,6 @@
+{
+  "package_name": "dd_motion_msgs",
+  "non_idl_tuples": [
+    "/home/pkorrap/Projects/DiabloRos2/dual_diablo_interfaces/matlab_msg_gen/glnxa64/src/dd_motion_msgs:msg/PoseCtrl.msg"
+  ]
+}

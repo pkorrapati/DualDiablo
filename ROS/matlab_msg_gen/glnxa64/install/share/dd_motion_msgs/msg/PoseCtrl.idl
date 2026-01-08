@@ -1,0 +1,46 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from dd_motion_msgs/msg/PoseCtrl.msg
+// generated code does not contain a copyright notice
+
+
+module dd_motion_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Front Left")
+    struct PoseCtrl {
+      double fl_x;
+
+      double fl_z;
+
+      @verbatim (language="comment", text=
+        "Front Right")
+      double fr_x;
+
+      double fr_z;
+
+      @verbatim (language="comment", text=
+        "Front Body")
+      double f_pitch;
+
+      double f_delta;
+
+      @verbatim (language="comment", text=
+        "Rear Left")
+      double bl_x;
+
+      double bl_z;
+
+      @verbatim (language="comment", text=
+        "Rear Right")
+      double br_x;
+
+      double br_z;
+
+      @verbatim (language="comment", text=
+        "Rear Body")
+      double b_pitch;
+
+      double b_delta;
+    };
+  };
+};

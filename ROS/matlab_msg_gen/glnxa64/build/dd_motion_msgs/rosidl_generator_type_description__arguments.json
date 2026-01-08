@@ -1,0 +1,7 @@
+{
+  "package_name": "dd_motion_msgs",
+  "output_dir": "/home/pkorrap/Projects/DiabloRos2/dual_diablo_interfaces/matlab_msg_gen/glnxa64/build/dd_motion_msgs/rosidl_generator_type_description/dd_motion_msgs",
+  "idl_tuples": [
+    "/home/pkorrap/Projects/DiabloRos2/dual_diablo_interfaces/matlab_msg_gen/glnxa64/build/dd_motion_msgs/rosidl_adapter/dd_motion_msgs:msg/PoseCtrl.idl"
+  ]
+}
