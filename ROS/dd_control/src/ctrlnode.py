@@ -36,6 +36,9 @@ def generatePath():
     x = np.append(x,  r1 - r2     + r3 * np.cos(th))
     y = np.append(y, -r1 - r2 +r3 + r3 * np.sin(th))
 
+    x = np.add(x, 4)
+    y = np.add(y, 7)
+
     points = np.array([x, y]).T
     # print(points)
     
