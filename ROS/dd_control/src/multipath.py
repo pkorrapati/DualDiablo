@@ -1,14 +1,31 @@
 #!/usr/bin/env python3
 
+from dataclasses import dataclass
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import pi
-from math import cos, sin, atan2, sqrt, degrees
+from math import cos, radians, sin, tan,  atan2, sqrt, degrees
 import rclpy
 from rclpy.node import Node
 from dd_motion_msgs.msg import PoseCtrl
 from geometry_msgs.msg import Twist, Transform
 from tf_transformations import euler_from_quaternion
+
+# Costants for Vehicle Definition
+# 
+
+@dataclass      
+class VEHICLE:
+    L: float = 1.0 # Distance between front and rear axles in meters
+    T: float = 0.3 # Distance between left and right wheels in meters
+    D_MAX: float = 0.6  # Maximum steering angle in radians
+    VEL_MAX: float = 2.0  # Maximum velocity in meters per second
+    ACC_MAX: float = 1.0  # Maximum acceleration in meters per second squared
+    DEC_MAX: float = -1.0  # Maximum deceleration in meters per second squared
+
+path1 = np.array([])
+path2 = np.array([])
+path3 = np.array([])
 
 points = np.array([])
 
@@ -20,27 +37,52 @@ plt.ion()
 plt.show(block=False)
 
 def generatePath():                
-    global points
-    r1 = 12
-    r2 = 15
+    global points, path1, path2, path3
+    r1 = 1.25 * VEHICLE.L / tan(VEHICLE.D_MAX)
+    r2 = 1.25 * VEHICLE.L / tan(VEHICLE.D_MAX)
     r3 = 9       
     
-    th = np.linspace(pi/2, 0, 12)                    
-    x =   0 + r1 * np.cos(th)
-    y = -r1 + r1 * np.sin(th)
+    th = np.linspace(-pi/2, -(pi/2) + radians(45.2), 4)                    
+    x =  0.25 + r1 * np.cos(th)
+    y =    r1 + r1 * np.sin(th)
 
-    th = np.linspace(0, -pi/2, 16)        
-    x = np.append(x,  r1 - r2 + r2 * np.cos(th))
-    y = np.append(y, -r1      + r2 * np.sin(th))
-          
-    th = np.linspace(-pi/2, -pi, 10)
-    x = np.append(x,  r1 - r2     + r3 * np.cos(th))
-    y = np.append(y, -r1 - r2 +r3 + r3 * np.sin(th))
+    th = np.linspace((pi/2) + radians(45.2), pi/2, 4)        
+    x = np.append(x,  4     + r2 * np.cos(th))
+    y = np.append(y,  2.5 - r2 + r2 * np.sin(th))
 
-    x = np.add(x, 5)
-    y = np.add(y, 2)
+    x = np.append(x,  16)
+    y = np.append(y,  2.5)
+    
+    path1 = np.array([x, y]).T
+    # points = np.array([x, y]).T
 
+    th = np.linspace(pi/2, (pi/2) - radians(45.2), 4)                    
+    x =  0.25 + r1 * np.cos(th)
+    y =   -r1 + r1 * np.sin(th)
+
+    th = np.linspace(-(pi/2) - radians(45.2), -pi/2, 4)        
+    x = np.append(x,  4         + r2 * np.cos(th))
+    y = np.append(y,  -2.5 + r2 + r2 * np.sin(th))
+
+    x = np.append(x,  16)
+    y = np.append(y,  -2.5)
+
+    path2 = np.array([x, y]).T
     points = np.array([x, y]).T
+
+    # th = np.linspace(-pi/2, -(pi/2) + radians(41), 6)                    
+    # x =  0.25 + r1 * np.cos(th)
+    # y =    r1 + r1 * np.sin(th)
+
+    # th = np.linspace((pi/2) + radians(41), pi/2, 6)        
+    # x = np.append(x,  4     + r2 * np.cos(th))
+    # y = np.append(y,  2.5 - r2 + r2 * np.sin(th))
+
+    # x = np.append(x,  8)
+    # y = np.append(y,  2.5)
+
+    # path3 = np.array([x, y]).T
+
     # print(points)
     
     # plt.pause(0.001)
@@ -53,6 +95,8 @@ class CtrlNode(Node):
             plt.gca().set_aspect('equal', 'box')    
             plt.draw()    
             plt.pause(0.001)
+            
+            
 
             self.t = Twist()
             self.p = PoseCtrl()
@@ -64,7 +108,7 @@ class CtrlNode(Node):
             pub_rate = 10.0
             self.ptId:int = 0
             self.delta = 0.0
-            self.vel = 2.0
+            self.vel = 0.75
             self.psiDesired = 0
 
             # Publisher and subscriber
@@ -92,27 +136,29 @@ class CtrlNode(Node):
             T = [[ cos(th), -sin(th), msg.translation.x],
                  [ sin(th),  cos(th), msg.translation.y], 
                  [       0,        0,                 1]] #R inverse
-            Pb = np.dot(np.linalg.inv(T), np.array([points[self.ptId, 0], points[self.ptId, 1], 1]).T)            
-
-            l = (points[self.ptId, 1] - yf)**2 + (points[self.ptId, 0] - xf)**2
+            
+            i = min(self.ptId, len(points)-1)
+            
+            Pb = np.dot(np.linalg.inv(T), np.array([points[i, 0], points[i, 1], 1]).T)            
+            l = (points[i, 1] - yf)**2 + (points[i, 0] - xf)**2
             e = sqrt(l)
+            
             if e < 0.5:
-                print(e)
+                
                 self.ptId = min(self.ptId + 1, len(points))                
                 
                 if self.ptId == len(points):
                     self.vel = 0.0
 
-            if self.ptId > 0:
+            if self.ptId > 0 and self.ptId < len(points):
                 self.psiDesired = atan2(points[self.ptId, 1] - points[self.ptId-1, 1], points[self.ptId, 0] - points[self.ptId-1, 0])
 
             # d = l * cos((pi/2) - self.psiDesired + th)
             #self.delta = th - self.psiDesired  #-max(min(atan2(points[self.ptId, 1] - yf, points[self.ptId, 0] - xf), 0.52) ,-0.52)
             # self.delta = th - self.psiDesired -atan2(0.5*d, self.vel if self.vel > 0 else 1)
             #self.delta = th - atan2(points[self.ptId, 1] - yf, points[self.ptId, 0] - xf) #-atan2(0.5*d, self.vel if self.vel > 0 else 1)
-            self.delta = -atan2(Pb[1], Pb[0])
-            print(self.delta)            
-            self.delta = max(min(self.delta, 0.6) ,-0.6)
+            self.delta = -atan2(Pb[1], Pb[0])                        
+            self.delta = max(min(self.delta, VEHICLE.D_MAX) ,-VEHICLE.D_MAX)
 
             plt.plot(xf, yf, 'ro')
             # plt.gca().set_aspect('equal', 'box')    

@@ -3,7 +3,7 @@
 import matplotlib.pyplot as plt
 import numpy as np
 from numpy import pi
-from math import cos, sin, atan2, sqrt, degrees
+from math import cos, sin, atan2, sqrt, degrees, radians
 import rclpy
 from rclpy.node import Node
 from dd_motion_msgs.msg import PoseCtrl
@@ -15,30 +15,30 @@ points = np.array([])
 plt.figure()
 plt.xlabel('x')
 plt.ylabel('y')
-plt.title('Generated path')
+plt.title('Global Location')
 plt.ion()
 plt.show(block=False)
 
 def generatePath():                
     global points
-    r1 = 12
-    r2 = 15
-    r3 = 9       
+    r1 = 22
+    r2 = 25
+    r3 = 15       
     
-    th = np.linspace(pi/2, 0, 12)                    
+    th = np.linspace(pi/2, 0, 5)                    
     x =   0 + r1 * np.cos(th)
     y = -r1 + r1 * np.sin(th)
 
-    th = np.linspace(0, -pi/2, 16)        
+    th = np.linspace(0, -pi/2, 6)        
     x = np.append(x,  r1 - r2 + r2 * np.cos(th))
     y = np.append(y, -r1      + r2 * np.sin(th))
           
-    th = np.linspace(-pi/2, -pi, 10)
+    th = np.linspace(-pi/2, -pi, 5)
     x = np.append(x,  r1 - r2     + r3 * np.cos(th))
     y = np.append(y, -r1 - r2 +r3 + r3 * np.sin(th))
 
-    x = np.add(x, 5)
-    y = np.add(y, 2)
+    x = np.add(x, 4)
+    y = np.add(y, 7)
 
     points = np.array([x, y]).T
     # print(points)
@@ -50,9 +50,12 @@ class CtrlNode(Node):
             super().__init__('ctrl_node')
 
             plt.plot(points[:, 0], points[:, 1], marker='o')
+            plt.plot(0)
             plt.gca().set_aspect('equal', 'box')    
             plt.draw()    
             plt.pause(0.001)
+
+            self.i = 0
 
             self.t = Twist()
             self.p = PoseCtrl()
@@ -64,7 +67,7 @@ class CtrlNode(Node):
             pub_rate = 10.0
             self.ptId:int = 0
             self.delta = 0.0
-            self.vel = 2.0
+            self.vel = 1.0
             self.psiDesired = 0
 
             # Publisher and subscriber
@@ -84,14 +87,18 @@ class CtrlNode(Node):
 
     def _input_callback(self, msg: Transform):
             rot = msg.rotation
-        #     th = atan2(2*(rot.w * rot.z + rot.x * rot.y), 1 - 2*(rot.x**2 + rot.y**2))
-            th = euler_from_quaternion([rot.x, rot.y, rot.z, rot.w])[2]            
+            # th = atan2(2*(rot.w * rot.z + rot.x * rot.y), 1 - 2*(rot.x**2 + rot.y**2))            
+            th = euler_from_quaternion([rot.x, rot.y, rot.z, rot.w])[2]
             xf = msg.translation.x + 0.5 * cos(th)
             yf = msg.translation.y + 0.5 * sin(th)
+            # print(degrees(th))  
+            # self.i += 1
+            # plt.plot(self.i, degrees(th), 'ro')
 
             T = [[ cos(th), -sin(th), msg.translation.x],
                  [ sin(th),  cos(th), msg.translation.y], 
                  [       0,        0,                 1]] #R inverse
+            
             Pb = np.dot(np.linalg.inv(T), np.array([points[self.ptId, 0], points[self.ptId, 1], 1]).T)            
 
             l = (points[self.ptId, 1] - yf)**2 + (points[self.ptId, 0] - xf)**2
@@ -110,12 +117,15 @@ class CtrlNode(Node):
             #self.delta = th - self.psiDesired  #-max(min(atan2(points[self.ptId, 1] - yf, points[self.ptId, 0] - xf), 0.52) ,-0.52)
             # self.delta = th - self.psiDesired -atan2(0.5*d, self.vel if self.vel > 0 else 1)
             #self.delta = th - atan2(points[self.ptId, 1] - yf, points[self.ptId, 0] - xf) #-atan2(0.5*d, self.vel if self.vel > 0 else 1)
+            
+            
             self.delta = -atan2(Pb[1], Pb[0])
-            print(self.delta)            
+            # print(self.delta)            
             self.delta = max(min(self.delta, 0.6) ,-0.6)
 
             plt.plot(xf, yf, 'ro')
-            # plt.gca().set_aspect('equal', 'box')    
+            # plt.ylim(-180, 180)            
+            # plt.gca().set_aspect('auto', 'box')
             plt.draw()
             plt.pause(0.001)                                        
 

@@ -23,10 +23,10 @@ PHASE_END = 180
 
 PEAK_OFFSET = 20 
 STRIDE_OFFSET = 10 # Offset
-STRIDE_LENGTH = 120 #mm
-STRIDE_HEIGHT = 90
+STRIDE_LENGTH = 150 #mm
+STRIDE_HEIGHT = 85
 
-BASE_HEIGHT = 200.0 #mm
+BASE_HEIGHT = 260.0 #mm
 
 P = [0, 0, 0] # Parabola coeffs. ax**2 + bx + c
 L = [0, 0]
@@ -129,7 +129,7 @@ class CtrlNode(Node):
                 pub_rate = 10.0
                 self.ptId:int = 0
                 self.delta = 0.0
-                self.vel = 0.10 #0.6
+                self.vel = 0.10 #0.3 #0.10 #0.6
                 self.psiDesired = 0
 
                 # Publisher and subscriber
