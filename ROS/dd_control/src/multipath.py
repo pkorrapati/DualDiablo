@@ -29,6 +29,9 @@ path3 = np.array([])
 
 points = np.array([])
 
+# points2 = np.array([0, 4, 0.3, "walking"], 
+#                    [2, 3, 0.3, "rolling"])
+
 plt.figure()
 plt.xlabel('x')
 plt.ylabel('y')
@@ -38,15 +41,15 @@ plt.show(block=False)
 
 def generatePath():                
     global points, path1, path2, path3
-    r1 = 1.25 * VEHICLE.L / tan(VEHICLE.D_MAX)
-    r2 = 1.25 * VEHICLE.L / tan(VEHICLE.D_MAX)
+    r1 = 1.3 * VEHICLE.L / tan(VEHICLE.D_MAX)
+    r2 = 1.3 * VEHICLE.L / tan(VEHICLE.D_MAX)
     r3 = 9       
     
-    th = np.linspace(-pi/2, -(pi/2) + radians(45.2), 4)                    
+    th = np.linspace(-pi/2, -(pi/2) + radians(60), 4)                    
     x =  0.25 + r1 * np.cos(th)
     y =    r1 + r1 * np.sin(th)
 
-    th = np.linspace((pi/2) + radians(45.2), pi/2, 4)        
+    th = np.linspace((pi/2) + radians(60), pi/2, 4)        
     x = np.append(x,  4     + r2 * np.cos(th))
     y = np.append(y,  2.5 - r2 + r2 * np.sin(th))
 
@@ -56,11 +59,12 @@ def generatePath():
     path1 = np.array([x, y]).T
     # points = np.array([x, y]).T
 
-    th = np.linspace(pi/2, (pi/2) - radians(45.2), 4)                    
+    # PATH 2
+    th = np.linspace(pi/2, (pi/2) - radians(90), 4)                    
     x =  0.25 + r1 * np.cos(th)
-    y =   -r1 + r1 * np.sin(th)
+    y =  2.5 -r1 + r1 * np.sin(th)
 
-    th = np.linspace(-(pi/2) - radians(45.2), -pi/2, 4)        
+    th = np.linspace(-(pi/2) - radians(90), -pi/2, 4)        
     x = np.append(x,  4         + r2 * np.cos(th))
     y = np.append(y,  -2.5 + r2 + r2 * np.sin(th))
 
@@ -108,7 +112,7 @@ class CtrlNode(Node):
             pub_rate = 10.0
             self.ptId:int = 0
             self.delta = 0.0
-            self.vel = 0.75
+            self.vel = 0.6
             self.psiDesired = 0
 
             # Publisher and subscriber

@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 # import matplotlib.pyplot as plt
+from dataclasses import dataclass
 import numpy as np
 import numpy.linalg as nalg
 from numpy import pi
@@ -17,6 +18,15 @@ from geometry_msgs.msg import Twist, Transform
 # plt.ion()
 # plt.show(block=False)
 
+@dataclass
+class Stride:
+    PEAK_OFFSET: float # Peak offset from center in mm, where is the heighest point of the stride
+    STR_OFFSET: float # Stride offset from center in mm, where is the center of the stride 
+    LENGTH: float # Stride length in mm
+    HEIGHT: float # Stride height in mm
+
+    PH_STRT: float # Phase at which stride starts in degrees
+    PH_END: float   # Phase at which stride ends in degrees
 
 PHASE_START = 0
 PHASE_END = 200
@@ -25,27 +35,18 @@ PEAK_OFFSET = 20
 STRIDE_OFFSET = 10 # Offset
 STRIDE_LENGTH = 150 #mm
 STRIDE_HEIGHT = 85
+STRIDE_HEIGHT_B = 90
 
 BASE_HEIGHT = 260.0 #mm
 
+flStride = Stride(PEAK_OFFSET, STRIDE_OFFSET, STRIDE_LENGTH, STRIDE_HEIGHT, PHASE_START, PHASE_END)
+frStride = Stride(PEAK_OFFSET, STRIDE_OFFSET, STRIDE_LENGTH, STRIDE_HEIGHT, PHASE_START, PHASE_END)
+blStride = Stride(PEAK_OFFSET+0, STRIDE_OFFSET-10, STRIDE_LENGTH, STRIDE_HEIGHT + 25, PHASE_START+20, PHASE_END)
+brStride = Stride(PEAK_OFFSET+0, STRIDE_OFFSET-10, STRIDE_LENGTH, STRIDE_HEIGHT + 25, PHASE_START+20, PHASE_END)
+
+
 P = [0, 0, 0] # Parabola coeffs. ax**2 + bx + c
 L = [0, 0]
-
-# In Parabola from phaseStart to phaseEnd
-# In Straightline from
-# def calcWalk():
-#         # d = 10, l = 120, h = 150
-#         global P
-#         # Calculate the parameters of a parabola
-#         # Boundary conditions
-#         Z = [0, 0, STRIDE_HEIGHT]
-#         X = [STRIDE_OFFSET - STRIDE_LENGTH/2, STRIDE_OFFSET + STRIDE_LENGTH/2, STRIDE_OFFSET]
-
-#         A = [[X[0]**2, X[0], 1],
-#              [X[1]**2, X[1], 1],
-#              [X[2]**2, X[2], 1]]
-        
-#         P = np.dot(nalg.inv(A), np.transpose(Z))
 
 def calcWalk():
         # d = 10, l = 120, h = 150
@@ -83,23 +84,23 @@ def calcWalk():
 
 #         return x, z 
 
-def getWalk(phase):
+def getWalk(phase, stride: Stride):
         phase = phase % 360.0
 
-        risePhase = PHASE_END
+        risePhase = stride.PH_END
         flatPhase = 360 - risePhase
 
         z = 0.0
         x = 0.0
 
-        if phase <= PHASE_END:
+        if phase <= stride.PH_END:
                 phi = 180 * phase / risePhase
-                x = -STRIDE_OFFSET + 0.5 * STRIDE_LENGTH * cos(radians(phi))
+                x = -stride.STR_OFFSET + 0.5 * stride.LENGTH * cos(radians(phi))
                 z = np.dot(P.T, np.transpose([x**2, x, 1]))
 
         else:
-                phi = 180 + 180 * (phase-PHASE_END) / flatPhase
-                x = -STRIDE_OFFSET + 0.5 * STRIDE_LENGTH * cos(radians(phi))
+                phi = 180 + 180 * (phase-stride.PH_END) / flatPhase
+                x = -stride.STR_OFFSET + 0.5 * stride.LENGTH * cos(radians(phi))
                 z = np.dot(L.T, np.transpose([x, 1]))
         
         return x, z       
@@ -129,7 +130,7 @@ class CtrlNode(Node):
                 pub_rate = 10.0
                 self.ptId:int = 0
                 self.delta = 0.0
-                self.vel = 0.10 #0.3 #0.10 #0.6
+                self.vel = 0.20 #0.3 #0.10 #0.6
                 self.psiDesired = 0
 
                 # Publisher and subscriber
@@ -150,20 +151,22 @@ class CtrlNode(Node):
         def _timer_callback(self):
                 self.phase = (self.phase + 5) % 360.0
 
-                (x1, z1) = getWalk(self.phase)
-                (x2, z2) = getWalk(self.phase + 180)
+                (x1f, z1f) = getWalk(self.phase, flStride)
+                (x1b, z1b) = getWalk(self.phase, brStride)
+                (x2f, z2f) = getWalk(self.phase + 180, frStride)
+                (x2b, z2b) = getWalk(self.phase + 180, blStride)
                 
-                self.p.fl_x = x1        
-                self.p.fl_z = -BASE_HEIGHT + z1
+                self.p.fl_x = x1f        
+                self.p.fl_z = -BASE_HEIGHT + z1f
 
-                self.p.br_x = x1
-                self.p.br_z = -BASE_HEIGHT + z1
+                self.p.br_x = x1b
+                self.p.br_z = -BASE_HEIGHT + z1b
 
-                self.p.fr_x = x2        
-                self.p.fr_z = -BASE_HEIGHT + z2
+                self.p.fr_x = x2f        
+                self.p.fr_z = -BASE_HEIGHT + z2f
 
-                self.p.bl_x = x2
-                self.p.bl_z = -BASE_HEIGHT + z2
+                self.p.bl_x = x2b
+                self.p.bl_z = -BASE_HEIGHT + z2b
 
                 self.t.linear.x = self.vel
                 self.p.f_delta = self.delta
