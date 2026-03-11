@@ -14,7 +14,7 @@ from tf_transformations import euler_from_quaternion
 # Costants for Vehicle Definition
 # 
 
-#Initial position of the robot is (0, 2.5)
+# iitial position 0,0 
 
 @dataclass      
 class VEHICLE:
@@ -28,6 +28,8 @@ class VEHICLE:
 path1 = np.array([])
 path2 = np.array([])
 path3 = np.array([])
+path4 = np.array([])
+path5 = np.array([])
 
 points = np.array([])
 
@@ -42,56 +44,76 @@ plt.ion()
 plt.show(block=False)
 
 def generatePath():                
-    global points, path1, path2, path3
+    global points, path1, path2, path3, path4, path5
     r1 = 1.3 * VEHICLE.L / tan(VEHICLE.D_MAX)
     r2 = 1.3 * VEHICLE.L / tan(VEHICLE.D_MAX)
     r3 = 9       
     
+    # Path 1
     th = np.linspace(-pi/2, -(pi/2) + radians(60), 4)                    
     x =  0.25 + r1 * np.cos(th)
     y =    r1 + r1 * np.sin(th)
 
     th = np.linspace((pi/2) + radians(60), pi/2, 4)        
     x = np.append(x,  4     + r2 * np.cos(th))
-    y = np.append(y,  2.5 - r2 + r2 * np.sin(th))
+    y = np.append(y,  4 - r2 + r2 * np.sin(th))
 
     x = np.append(x,  16)
-    y = np.append(y,  2.5)
+    y = np.append(y,  4)
     
     path1 = np.array([x, y]).T
-    # points = np.array([x, y]).T
-
+    
+    
     # PATH 2
+    th = np.linspace(-pi/2, -(pi/2) + radians(60), 4)                    
+    x =  0.25 + r1 * np.cos(th)
+    y =    r1 + r1 * np.sin(th)
+
+    th = np.linspace((pi/2) + radians(60), pi/2, 4)        
+    x = np.append(x,  4     + r2 * np.cos(th))
+    y = np.append(y,  2 - r2 + r2 * np.sin(th))
+
+    x = np.append(x,  16)
+    y = np.append(y,  2)
+    
+    path2 = np.array([x, y]).T
+#     points = np.array([x, y]).T
+
+    # PATH 3
+    x = np.append([0.25],  16)
+    y = np.append([0],  0)
+
+    path3 = np.array([x, y]).T
+
+    # PATH 4
+    th = np.linspace(pi/2, (pi/2) - radians(45), 4)                    
+    x =  0.25 + r1 * np.cos(th)
+    y =  -r1 + r1 * np.sin(th)
+
+    th = np.linspace(-(pi/2) - radians(45), -pi/2, 4)        
+    x = np.append(x,  4         + r2 * np.cos(th))
+    y = np.append(y,  -2 + r2 + r2 * np.sin(th))
+
+    x = np.append(x,  16)
+    y = np.append(y,  -2)
+
+    path4 = np.array([x, y]).T
+
+    # PATH 5
     th = np.linspace(pi/2, (pi/2) - radians(90), 4)                    
     x =  0.25 + r1 * np.cos(th)
-    y =  2.5 -r1 + r1 * np.sin(th)
+    y =  -r1 + r1 * np.sin(th)
 
     th = np.linspace(-(pi/2) - radians(90), -pi/2, 4)        
     x = np.append(x,  4         + r2 * np.cos(th))
-    y = np.append(y,  -2.5 + r2 + r2 * np.sin(th))
+    y = np.append(y,  -4 + r2 + r2 * np.sin(th))
 
     x = np.append(x,  16)
-    y = np.append(y,  -2.5)
+    y = np.append(y,  -4)
 
-    path2 = np.array([x, y]).T
-    points = np.array([x, y]).T
+    path5 = np.array([x, y]).T
 
-    # th = np.linspace(-pi/2, -(pi/2) + radians(41), 6)                    
-    # x =  0.25 + r1 * np.cos(th)
-    # y =    r1 + r1 * np.sin(th)
-
-    # th = np.linspace((pi/2) + radians(41), pi/2, 6)        
-    # x = np.append(x,  4     + r2 * np.cos(th))
-    # y = np.append(y,  2.5 - r2 + r2 * np.sin(th))
-
-    # x = np.append(x,  8)
-    # y = np.append(y,  2.5)
-
-    # path3 = np.array([x, y]).T
-
-    # print(points)
-    
-    # plt.pause(0.001)
+    points = path5
 
 class CtrlNode(Node):
     def __init__(self):
@@ -108,13 +130,13 @@ class CtrlNode(Node):
             self.p = PoseCtrl()
             self.p.fl_z = -200.0
             self.p.fr_z = -200.0
-            self.p.bl_z = -200.0
-            self.p.br_z = -200.0
+            self.p.bl_z = -200.0 #-200.0
+            self.p.br_z = -200.0 #-200.0
 
             pub_rate = 10.0
             self.ptId:int = 0
             self.delta = 0.0
-            self.vel = 0.6
+            self.vel = 0.25
             self.psiDesired = 0
 
             # Publisher and subscriber
