@@ -22,7 +22,7 @@ class VEHICLE:
     T: float = 0.3 # Distance between left and right wheels in meters
     D_MAX: float = 0.6  # Maximum steering angle in radians
     VEL_MAX: float = 2.0  # Maximum velocity in meters per second
-    ACC_MAX: float = 1.0  # Maximum acceleration in meters per second squared
+    ACC_MAX: float = 0.5  # Maximum acceleration in meters per second squared
     DEC_MAX: float = -1.0  # Maximum deceleration in meters per second squared
 
 path1 = np.array([])
@@ -123,21 +123,28 @@ class CtrlNode(Node):
             plt.gca().set_aspect('equal', 'box')    
             plt.draw()    
             plt.pause(0.001)
-            
-            
 
+            z = -200.0 #-200.0
+    
             self.t = Twist()
             self.p = PoseCtrl()
-            self.p.fl_z = -200.0
-            self.p.fr_z = -200.0
-            self.p.bl_z = -200.0 #-200.0
-            self.p.br_z = -200.0 #-200.0
+            self.p.fl_z = z
+            self.p.fr_z = z
+            self.p.bl_z = z
+            self.p.br_z = z
 
             pub_rate = 10.0
             self.ptId:int = 0
             self.delta = 0.0
-            self.vel = 0.25
+            self.velDesired = 0.75
             self.psiDesired = 0
+
+            self.accMAx = VEHICLE.ACC_MAX
+            self.vel = 0.0 # Dont change
+
+            self.vel = self.velDesired
+
+            self.stale = True
 
             # Publisher and subscriber
             self.pubPose = self.create_publisher(PoseCtrl, '/poser', 3)
@@ -155,6 +162,19 @@ class CtrlNode(Node):
             # self._last_msg = None
 
     def _input_callback(self, msg: Transform):
+            # if self.stale:
+            #     self._last_msg_time_ns = self.get_clock().now().nanoseconds
+            #     self.stale = False
+            #     return
+        
+            # now_ns = self.get_clock().now().nanoseconds
+            # delay = (now_ns - self._last_msg_time_ns) * 1e-9
+
+            # if (delay) >= 1.0:
+            #     self.stale = True
+            #     self.vel = 0.0
+            #     return
+
             rot = msg.rotation
         #     th = atan2(2*(rot.w * rot.z + rot.x * rot.y), 1 - 2*(rot.x**2 + rot.y**2))
             th = euler_from_quaternion([rot.x, rot.y, rot.z, rot.w])[2]            
@@ -171,15 +191,14 @@ class CtrlNode(Node):
             l = (points[i, 1] - yf)**2 + (points[i, 0] - xf)**2
             e = sqrt(l)
             
-            if e < 0.5:
-                
-                self.ptId = min(self.ptId + 1, len(points))                
-                
+            if e < 0.5:                
+                self.ptId = min(self.ptId + 1, len(points))                                
                 if self.ptId == len(points):
                     self.vel = 0.0
 
             if self.ptId > 0 and self.ptId < len(points):
                 self.psiDesired = atan2(points[self.ptId, 1] - points[self.ptId-1, 1], points[self.ptId, 0] - points[self.ptId-1, 0])
+                # self.vel = min(self.vel + self.accMAx * delay, self.velDesired)
 
             # d = l * cos((pi/2) - self.psiDesired + th)
             #self.delta = th - self.psiDesired  #-max(min(atan2(points[self.ptId, 1] - yf, points[self.ptId, 0] - xf), 0.52) ,-0.52)
